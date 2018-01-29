@@ -39,6 +39,7 @@ extension UIButton{
         }
     }
     func fof_startTimer(time aTime:Int) {
+        assert(aTime>0, "时间必须大于0")
         if (self.timer != nil) {
             self.timer?.cancel()
         }
